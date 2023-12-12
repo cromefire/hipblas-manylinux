@@ -58,5 +58,6 @@ jobs:
           file: manylinux2014.Dockerfile
           build-args: AMDGPU_INSTALL_URL=${{ matrix.url }}
           push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           annotations: ${{ steps.meta.outputs.labels }}
