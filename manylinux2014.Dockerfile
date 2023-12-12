@@ -5,4 +5,6 @@ ARG AMDGPU_INSTALL_URL
 RUN curl -SL "${AMDGPU_INSTALL_URL:?No amdgpu-install URL provided}" --output /tmp/amdgpu-install.rpm && \
     yum -y install /tmp/amdgpu-install.rpm && \
     rm /tmp/amdgpu-install.rpm && \
-    yum -y install hipblas-devel hipblaslt-devel rocblas-devel
+    yum -y install hipblas-devel hipblaslt-devel rocblas-devel && \
+    yum clean all && \
+    rm -r /var/cache/yum
