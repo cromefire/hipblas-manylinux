@@ -21,7 +21,7 @@ jobs:
         version: [ "5.7", "6.0" ]
         include:
           - version: "5.7"
-            url: "https://repo.radeon.com/amdgpu-install/5.7.2/rhel/7.9/amdgpu-install-5.7.50702-1.el7.noarch.rpm"
+            url: "https://repo.radeon.com/amdgpu-install/5.7.3/rhel/7.9/amdgpu-install-5.7.50703-1.el7.noarch.rpm"
           - version: "6.0"
             url: "https://repo.radeon.com/amdgpu-install/6.0/rhel/7.9/amdgpu-install-6.0.60000-1.el7.noarch.rpm"
     steps:
